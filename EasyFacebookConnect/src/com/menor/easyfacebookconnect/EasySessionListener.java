@@ -28,9 +28,6 @@ public class EasySessionListener implements FacebookAppListener {
 	public void onClosedLoginFailed(Session session, SessionState state, Exception exception) { }
 
 	@Override
-	public void onDependencyError(String error) { }
-
-	@Override
 	public void onFinish() { }
 
 }

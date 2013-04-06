@@ -30,7 +30,5 @@ public interface FacebookAppListener {
     public void onCreated(Session session, SessionState state, Exception exception);
     
     public void onClosedLoginFailed(Session session, SessionState state, Exception exception);
-    
-    public void onDependencyError(String error);
 
 }
