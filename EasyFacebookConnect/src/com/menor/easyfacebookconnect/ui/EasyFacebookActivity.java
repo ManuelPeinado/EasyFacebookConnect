@@ -2,6 +2,7 @@ package com.menor.easyfacebookconnect.ui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import com.facebook.*;
 import com.facebook.model.GraphUser;
@@ -58,7 +59,7 @@ public class EasyFacebookActivity extends Activity {
      * ******** Public Methods **********
      * **********************************
      */
-    public void connect(EasySessionListener listener)  {
+    protected void connect(EasySessionListener listener)  {
         userListener = listener;
         Session session = Session.getActiveSession();
         if (!session.isOpened() && !session.isClosed()) {
@@ -69,6 +70,37 @@ public class EasyFacebookActivity extends Activity {
         session = Session.getActiveSession();
         if (session.isOpened()) {
             makeMeRequest(session);
+        }
+        //TODO if session is not opened, it doesn't call onFinish.
+    }
+
+    protected void uploadPhoto(Bitmap image, EasySessionListener listener) {
+        uploadPhoto(image, null, listener);
+    }
+
+    protected void uploadPhoto(Bitmap image, String photoDescription, EasySessionListener listener) {
+        Session session = Session.getActiveSession();
+        if (!session.isOpened() && !session.isClosed()) {
+            session.openForRead(new Session.OpenRequest(this).setCallback(statusCallback));
+        } else {
+            Session.openActiveSession(this, true, statusCallback);
+        }
+        session = Session.getActiveSession();
+        if (session.isOpened()) {
+            makePhotoRequest(image, photoDescription, session, listener);
+        }
+    }
+
+    protected void uploadStatus(String status, EasySessionListener listener) {
+        Session session = Session.getActiveSession();
+        if (!session.isOpened() && !session.isClosed()) {
+            session.openForRead(new Session.OpenRequest(this).setCallback(statusCallback));
+        } else {
+            Session.openActiveSession(this, true, statusCallback);
+        }
+        session = Session.getActiveSession();
+        if (session.isOpened()) {
+            makeStatusRequest(status, session, listener);
         }
     }
 
@@ -125,9 +157,6 @@ public class EasyFacebookActivity extends Activity {
     }
 
 
-
-
-
     /**
      * **********************************
      * ************ Classes *************
@@ -177,18 +206,58 @@ public class EasyFacebookActivity extends Activity {
             @Override
             public void onCompleted(GraphUser facebookUser, Response facebookResponse) {
                 if (facebookUser != null) {
-                      user.storeUser(facebookUser);
+                    user.storeUser(facebookUser);
                 }
                 if (facebookResponse != null) {
                     response.storeResponse(facebookResponse);
                 }
                 if (session == Session.getActiveSession()) {
-                    userListener.onComplete();
+                    userListener.onSuccess(facebookResponse);
                 }
                 if (facebookResponse.getError() != null) {
                     userListener.onError(facebookResponse.getError());
                 }
                 userListener.onFinish();
+            }
+
+        });
+        request.executeAsync();
+    }
+
+    private void makePhotoRequest(final Bitmap image, final String photoDescription, final Session session, final EasySessionListener listener) {
+        listener.onStart();
+        Request request = Request.newUploadPhotoRequest(session, image, new Request.Callback() {
+
+            @Override
+            public void onCompleted(Response response) {
+                if (response.getError() != null) {
+                    listener.onError(response.getError());
+                } else {
+                    listener.onSuccess(response);
+                }
+                listener.onFinish();
+            }
+
+        });
+        if (photoDescription != null) {
+            Bundle params = request.getParameters();
+            params.putString("message", photoDescription);
+        }
+        request.executeAsync();
+    }
+
+    private void makeStatusRequest(final String photoDescription, final Session session, final EasySessionListener listener) {
+        listener.onStart();
+        Request request = Request.newStatusUpdateRequest(session, photoDescription, new Request.Callback() {
+
+            @Override
+            public void onCompleted(Response response) {
+                if (response.getError() != null) {
+                    listener.onError(response.getError());
+                } else {
+                    listener.onSuccess(response);
+                }
+                listener.onFinish();
             }
 
         });

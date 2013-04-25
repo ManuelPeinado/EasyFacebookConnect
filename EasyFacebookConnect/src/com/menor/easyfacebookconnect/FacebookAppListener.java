@@ -1,6 +1,7 @@
 package com.menor.easyfacebookconnect;
 
 import com.facebook.FacebookRequestError;
+import com.facebook.Response;
 import com.facebook.Session;
 import com.facebook.SessionState;
 
@@ -10,18 +11,15 @@ import com.facebook.SessionState;
 public interface FacebookAppListener {
 
     /**
-     * Called when a dialog completes.
+     * Callbacks
      */
-    public void onComplete();
-    
-    public void onFinish();
+    public void onStart();
 
-    /**
-     * Called when a user data attempt is failed
-     */
+    public void onSuccess(Response response);
+
     public void onError(FacebookRequestError error);
     
-    public void onStart();
+    public void onFinish();
 
     public void onOpened(Session session, SessionState state, Exception exception);
     

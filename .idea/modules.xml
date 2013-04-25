@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/BooleanOGSample/BooleanOGSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/BooleanOGSample/BooleanOGSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/EasyFacebookConnect/EasyFacebookConnect.iml" filepath="$PROJECT_DIR$/EasyFacebookConnect/EasyFacebookConnect.iml" />
       <module fileurl="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/EasyFacebookConnect-Samples.iml" filepath="$PROJECT_DIR$/EasyFacebookConnect-Samples/EasyFacebookConnect-Samples.iml" />
       <module fileurl="file://$PROJECT_DIR$/EasyFacebookConnect/thirds/FacebookSDK/FacebookSDK.iml" filepath="$PROJECT_DIR$/EasyFacebookConnect/thirds/FacebookSDK/FacebookSDK.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/FriendPickerSample/FriendPickerSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/FriendPickerSample/FriendPickerSample.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/GraphApiSample/GraphApiSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/GraphApiSample/GraphApiSample.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/HelloFacebookSample/HelloFacebookSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/HelloFacebookSample/HelloFacebookSample.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/PlacePickerSample/PlacePickerSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/PlacePickerSample/PlacePickerSample.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/ProfilePictureSample/ProfilePictureSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/ProfilePictureSample/ProfilePictureSample.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/Scrumptious/Scrumptious.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/Scrumptious/Scrumptious.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/SessionLoginSample/SessionLoginSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/SessionLoginSample/SessionLoginSample.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/SwitchUserSample/SwitchUserSample.iml" filepath="$USER_HOME$/Downloads/facebook-android-sdk-master/samples/SwitchUserSample/SwitchUserSample.iml" />
     </modules>
   </component>
 </project>
