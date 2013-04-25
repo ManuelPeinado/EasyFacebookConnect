@@ -19,9 +19,6 @@ Screenshots
 </a>
 
 
-
-
-
 Usage
 -----
 
@@ -179,13 +176,14 @@ Developed By
 
 * César Díez Sánchez - <cesaryomismo@gmail.com>
 
-
 <a href="https://twitter.com/menorking">
   <img alt="Follow me on Twitter" src="http://img692.imageshack.us/img692/5807/gstwittern.png" />
 </a>
+
 <a href="https://plus.google.com/115273462230054581675">
   <img alt="Follow me on Google Plus" src="http://img443.imageshack.us/img443/3623/gsgoogleplus.png" />
 </a>
+
 <a href="http://www.linkedin.com/in/cesardiezsanchez">
   <img alt="Add me to Linkedin" src="http://img854.imageshack.us/img854/4308/gslinkedin.png" />
 </a>

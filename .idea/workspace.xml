@@ -194,7 +194,7 @@
       <file leaf-file-name="HomeActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/src/com/menor/easyfacebookconnect/samples/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="79" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.17751479">
+            <state line="84" column="46" selection-start="2651" selection-end="2651" vertical-scroll-proportion="1.3091716">
               <folding />
             </state>
           </provider>
@@ -210,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/EasyFacebookConnect/src/com/menor/easyfacebookconnect/preference/FacebookPreference.java" />
         <option value="$PROJECT_DIR$/EasyFacebookConnect/src/com/menor/easyfacebookconnect/preference/UserPreference.java" />
         <option value="$PROJECT_DIR$/EasyFacebookConnect/src/com/menor/easyfacebookconnect/preference/ResponsePreference.java" />
         <option value="$PROJECT_DIR$/EasyFacebookConnect/src/com/menor/easyfacebookconnect/model/FacebookUser.java" />
@@ -226,6 +225,7 @@
         <option value="$PROJECT_DIR$/EasyFacebookConnect/src/com/menor/easyfacebookconnect/ui/EasyFacebookFragmentActivity.java" />
         <option value="$PROJECT_DIR$/EasyFacebookConnect/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/EasyFacebookConnect-Samples/src/com/menor/easyfacebookconnect/samples/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/EasyFacebookConnect-Samples/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -299,10 +299,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="samples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -566,7 +562,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24235006" sideWeight="0.7787611" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22123894" sideWeight="0.9989328" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22123894" sideWeight="0.9989328" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6006424" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6006424" order="2" side_tool="false" content_ui="tabs" />
@@ -657,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="223" selection-end="281" vertical-scroll-proportion="0.12747875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/ProfilePictureSample/src/com/facebook/samples/profilepicture/ProfilePictureSampleFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="246" column="1" selection-start="9051" selection-end="9051" vertical-scroll-proportion="0.4631728" />
@@ -737,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="53" selection-start="939" selection-end="1253" vertical-scroll-proportion="0.7223796">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/facebook-android-sdk-master/samples/SwitchUserSample/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="175" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.42492917">
@@ -751,9 +733,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="35" selection-start="152" selection-end="152" vertical-scroll-proportion="0.088757396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="17" selection-start="332" selection-end="332" vertical-scroll-proportion="0.22189349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EasyFacebookConnect-Samples/src/com/menor/easyfacebookconnect/samples/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="79" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.17751479">
+        <state line="84" column="46" selection-start="2651" selection-end="2651" vertical-scroll-proportion="1.3091716">
           <folding />
         </state>
       </provider>
