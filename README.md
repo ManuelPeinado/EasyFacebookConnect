@@ -15,7 +15,7 @@ Screenshots
 -----------
 
 <a>
-  <img src="https://github.com/m3n0R/EasyFacebookConnect/blob/master/screen_1.png">
+  <img src="http://img690.imageshack.us/img690/8693/screen1sdc.png">
 </a>
 
 
