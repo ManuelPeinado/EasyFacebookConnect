@@ -14,19 +14,11 @@ Currently, it provides following features:
 Screenshots
 -----------
 
-<a href="http://img27.imageshack.us/img27/1590/screen1es.png" alt="Screen 1">
-  <img src="http://img27.imageshack.us/img27/1590/screen1es.png">
+<a>
+  <img src="http://img341.imageshack.us/img341/4725/descarga2z.png">
 </a>
 
 
-Try out the sample application
-
-<a href="https://play.google.com/store/apps/details?id=com.manuelpeinado.multichoiceadapter.demo">
-  <img alt="Android app on Google Play"
-       src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" />
-</a>
-
-Or browse the [source code of the sample application][1] for a complete example of use.
 
 
 
@@ -76,7 +68,7 @@ Windows: keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.androi
 
 But I entirely RECOMMEND you, using this code in your activity, for avoiding problems:
 
-```
+```java
 @Override
 public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -135,7 +127,7 @@ Also, you must add this into your Application code:
 In your activity, extends EasyFacebookActivity and call connect() method. It will be necessary a listener parameter, which will provide the necessary callbacks for working as any method expected. Here is an example:
 
 
-```
+```java
 connect(new EasySessionListener() {
 
     ProgressDialog progressDialog;
@@ -180,9 +172,7 @@ connect(new EasySessionListener() {
     }
 
 });
-``
-
-
+```
 
 Developed By
 ------------
@@ -204,6 +194,7 @@ Developed By
 License
 -------
 
+```
 Copyright 2013 m3n0R
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -217,7 +208,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
+```
 
 [1]: https://github.com/m3n0R/EasyFacebookConnect/tree/master/EasyFacebookConnect-Samples
 
